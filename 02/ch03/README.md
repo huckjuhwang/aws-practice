@@ -29,6 +29,5 @@
     ```
 2. Elastic IP(고정 IP 할당): 아파치 웹 서버 접속
 3. Network Interface card 추가 : 2개의 고정 IP로 2개의 웹사이트 운영
-4. 
 
 
