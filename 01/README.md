@@ -1,4 +1,4 @@
-## AWS Practices - 01. AWS 시작하기
+## [AWS Practices](https://github.com/huckjuhwang/aws-practice) - 01. AWS 시작하기
 
 ### ch01.AWS 소개
 1. 클라우드 컴퓨팅

@@ -21,9 +21,14 @@
 
 
 ### 04. Network 설정
-1.
-2.
-3.
-4.
+1. Security Group: 방화벽: 아파치 웹 서버 운영
+    ```bash
+    # yum install -y httpd
+    # systemctl enable httpd
+    # service httpd [start|stop|restart]
+    ```
+2. Elastic IP(고정 IP 할당): 아파치 웹 서버 접속
+3. Network Interface card 추가 : 2개의 고정 IP로 2개의 웹사이트 운영
+4. 
 
 
