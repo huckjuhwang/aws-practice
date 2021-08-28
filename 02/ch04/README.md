@@ -8,6 +8,10 @@
 ### 03. AWS SDK 프로그래밍
 
 ### 04. 배포 자동화 : Colud Formation
+ex01
+ex02
+ex03 - VPC, KeyName, InstanceType, Parameter
+        resource: EC2, SecurityGroup
 
-
+[ex03]-------------------------------
 

@@ -44,7 +44,7 @@
 			"Metadata": {
 				"AWS::CloudFormation::Init": {
 					"configSets": {
-						"config01": ["Install"]
+						"config": ["Install"]
 					},
 					"Install": {
 						"packages": {
@@ -102,7 +102,7 @@
 							"/opt/aws/bin/cfn-init -v ",
 							" --stack ", {"Ref": "AWS::StackName"},
 							" --resource WebServerInstance ",
-							" --configsets config01 ",
+							" --configsets config ",
 							" --region ", {"Ref": "AWS::Region"}, "\n"
 						]]
 					}
