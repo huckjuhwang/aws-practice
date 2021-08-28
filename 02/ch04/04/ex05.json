@@ -52,12 +52,13 @@
 								"httpd": []
 					  		}
 						},
-
 						"files":{
-							"/var/www/html/index.html" : "https://raw.githubusercontent.com/huckjuhwang/aws-practice/main/02/ch04/04/index.html",
+							"/var/www/html/index.html" : {
+							"source" : "https://raw.githubusercontent.com/huckjuhwang/aws-practice/main/02/ch04/04/index.html",
 							"mode": "000644",
 							"owner": "apache",
 							"group": "apache"
+							}
 						},
 
 						"services": {
