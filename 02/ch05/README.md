@@ -14,3 +14,12 @@
 #### -> 네트워크와 네트워크 사이의 트래픽을 제어하는 것
 
 ### 05. VPC: 가상 사설 클라우드(네트워크)
+
+### ex05.json 실행 방법
+```bash
+$ aws cloudformation create-stack --stack-name myserver --template-body https://raw.githubusercontent.com/huckjuhwang/aws-practice/main/02/ch05/03/ex05.json --parameters ParameterKey=KeyName,ParameterValue=mykey ParameterKey=VPC,ParameterValue=vpc-3ca43a57 ParameterKey=InstanceType,ParameterValue=t2.micro --capabilities CAPABILITY_NAMED_IAM
+
+$ aws cloudformation describe-stacks --stack-name myserver --query Stacks[0].Outputs
+
+$ aws cloudformation delete-stack --stack-name myserver
+```
