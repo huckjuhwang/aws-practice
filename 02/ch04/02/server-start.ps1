@@ -16,7 +16,7 @@ aws ec2 authorize-security-group-ingress --group-id $SGID --protocol tcp --port 
 
 Write-Host '[6] Create and start the server...'
 $INSTANCETYPE='t2.micro'
-$KEYNAME='mykey'
+$KEYNAME='mykey (1)'
 $INSTANCEID=aws ec2 run-instances --image-id $AMIID --instance-type $INSTANCETYPE --security-group-ids $SGID --subnet-id $SUBNETID --key-name $KEYNAME --query "Instances[0].InstanceId" --output text
 
 Write-Host "waiting for $INSTANCEID..."
