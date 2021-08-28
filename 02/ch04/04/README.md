@@ -37,3 +37,13 @@ $ aws cloudformation describe-stacks --stack-name myserver --query Stacks[0].Out
 
 $ aws cloudformation delete-stack --stack-name myserver
 ```
+
+
+### ex07.json ( github 레파지토리에 있는 내용을 clone하지 않고도 AWS에 적용 )
+```bash
+$ aws cloudformation create-stack --stack-name myserver --template-body https://raw.githubusercontent.com/huckjuhwang/aws-practice/main/02/ch04/04/ex07.json --parameters ParameterKey=KeyName,ParameterValue=mykey ParameterKey=VPC,ParameterValue=vpc-3ca43a57 ParameterKey=InstanceType,ParameterValue=t2.micro
+
+$ aws cloudformation describe-stacks --stack-name myserver --query Stacks[0].Outputs
+
+$ aws cloudformation delete-stack --stack-name myserver
+```
