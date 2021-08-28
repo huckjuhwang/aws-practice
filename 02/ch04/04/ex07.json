@@ -52,6 +52,9 @@
 								"httpd": []
 					  		}
 						},
+						"sources": {
+							"/var/www/html": "https://github.com/huckjuhwang/awsTestMysite/tarball/main"
+						},
 						"services": {
 							"sysvinit": {
 								"httpd": {
