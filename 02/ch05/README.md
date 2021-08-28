@@ -1,5 +1,16 @@
-## [AWS Practices](https://github.com/huckjuhwang/aws-practice) - 02. 가상 인프라 구축
+## ch05. 시스템 보안
 
-### [ch03. 가상 서버: EC2](https://github.com/huckjuhwang/aws-practice/tree/main/01/ch03)
-### [ch04. 인프라 프로그래밍 기본](https://github.com/huckjuhwang/aws-practice/tree/main/01/ch04)
-### [ch05. 시스템 보안](https://github.com/huckjuhwang/aws-practice/tree/main/01/ch05)
+### 01. 보안 책임
+### 02. 소프트웨어 업데이트
+### 03. IAM: AWS 계정 보안
+
+#### 보안 = 인증( Authentication, Identity )            +   권한 ( Authorization, Access )
+####       password, access key
+####       계정(root) ,  사용자,   역할(자원)               정책(정책은 인증들 한테 정책을 부여한다.)
+####                     그룹
+
+
+### 04. 트레픽 제어 (3:23)
+#### -> 네트워크와 네트워크 사이의 트래픽을 제어하는 것
+
+### 05. VPC: 가상 사설 클라우드(네트워크)
